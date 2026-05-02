@@ -1,9 +1,10 @@
 {
-  "version": 2,
-  "routes": [
-    { "src": "/api/scripts/(.+)", "dest": "/api/scripts.js" },
-    { "src": "/api/scripts",      "dest": "/api/scripts.js" },
-    { "src": "/api/announcements/(.+)", "dest": "/api/announcements.js" },
-    { "src": "/api/announcements",      "dest": "/api/announcements.js" }
+  "functions": {
+    "api/scripts.js": {
+      "memory": 512
+    }
+  },
+  "rewrites": [
+    { "source": "/api/scripts/:id", "destination": "/api/scripts" }
   ]
 }
