@@ -1,9 +1,9 @@
 {
   "version": 2,
   "routes": [
-    { "src": "/api/scripts/(.*)", "dest": "/api/scripts.js" },
-    { "src": "/api/announcements/(.*)", "dest": "/api/announcements.js" },
-    { "src": "/api/scripts", "dest": "/api/scripts.js" },
-    { "src": "/api/announcements", "dest": "/api/announcements.js" }
+    { "src": "/api/scripts/(.+)", "dest": "/api/scripts.js" },
+    { "src": "/api/scripts",      "dest": "/api/scripts.js" },
+    { "src": "/api/announcements/(.+)", "dest": "/api/announcements.js" },
+    { "src": "/api/announcements",      "dest": "/api/announcements.js" }
   ]
 }
