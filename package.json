@@ -2,6 +2,6 @@
   "name": "ajjan-script-hub",
   "version": "1.0.0",
   "dependencies": {
-    "@vercel/kv": "^1.0.0"
+    "node-fetch": "^2.6.9"
   }
 }
